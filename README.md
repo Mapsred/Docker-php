@@ -63,9 +63,9 @@ Utiliser le reverse proxy de Apache (voir dossier conf)
 
 # Récupérer l'image : 
 
->    	sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php53:version1 /bin/bash
+>    	sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php53 /bin/bash
 Cette commande va :
-* lancer le container à partir de l'image ''francoismathieu/php53:version1" (visible sur https://hub.docker.com/r/francoismathieu/php53/)
+* lancer le container à partir de l'image ''francoismathieu/php53" (visible sur https://hub.docker.com/r/francoismathieu/php53/)
 * connecter le port 8081 du parent au port 80 du container
 * faire un lien dossier parent "/home/$USER/projets" dans le dossier "/var/www/projets" du container
 
