@@ -63,11 +63,11 @@ Utiliser le reverse proxy de Apache (voir dossier conf)
 
 ### Récupérer l'image
 
-#### PHP 5.6
-> sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php56 /bin/bash
+#### PHP 5.3
+> sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php53 /bin/bash
 
 #### PHP 5.6
-> sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php53 /bin/bash
+> sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php56 /bin/bash
 
 #### PHP 7.1
 > sudo docker run -it -p 8081:80 -v /home/$USER/projets:/var/www/projets francoismathieu/php71 /bin/bash
