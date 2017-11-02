@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+    proxy:
+      image: nginx:stable
+      container_name: mapsred-nginx-proxy
+      ports:
+        - "80:80"
+      volumes:
+        - ./engine/conf:/etc/nginx/conf.d
+    php-fpm:
+      build: engine/php-fpm
+      container_name: mapsred-nginx-php-fpm
+      volumes:
+        - ./engine/php-fpm/php-ini-overrides.ini:/etc/php/7.0/fpm/conf.d/99-overrides.ini
